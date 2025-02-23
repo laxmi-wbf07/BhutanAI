@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BhutanAI is comming soon</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+    /* Animated gradient background */
+    body {
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    /* Message styling and animation */
+    .message {
+      color: #ffffff;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      animation: slideIn 1.5s ease-out forwards, pulse 2s infinite alternate;
+      opacity: 0;
+    }
+    @keyframes slideIn {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes pulse {
+      0% { text-shadow: 0 0 10px rgba(255,255,255,0.5); }
+      100% { text-shadow: 0 0 20px rgba(255,255,255,1); }
+    }
+    /* Responsive font size */
+    @media (max-width: 768px) {
+      .message {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">BhutanAI is comming soon</div>
+</body>
+</html>
